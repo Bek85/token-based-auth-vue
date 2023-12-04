@@ -18,6 +18,11 @@ const router = new Router({
       path: '/dashboard',
       name: 'dashboard',
       component: Dashboard
+    },
+    {
+      path: '/register',
+      name: 'register',
+      component: () => import('@/views/RegisterUser.vue')
     }
   ]
 })
