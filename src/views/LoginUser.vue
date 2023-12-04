@@ -8,6 +8,8 @@
       <input v-model="password" type="password" name="password" value />
 
       <button type="submit" name="button">Login</button>
+
+      <router-link to="/register">Don't have an account? Register. </router-link>
     </form>
   </div>
 </template>

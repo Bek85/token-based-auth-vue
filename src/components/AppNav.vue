@@ -6,6 +6,10 @@
     <router-link to="/dashboard">
       Dashboard
     </router-link>
+    <router-link class="button" to="/login">
+      Login
+    </router-link>
+
   </div>
 </template>
 
