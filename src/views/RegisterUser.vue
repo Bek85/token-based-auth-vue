@@ -27,11 +27,15 @@ export default {
   },
   methods: {
     register() {
-      this.$store.dispatch('register', {
-        name: this.name,
-        email: this.email,
-        password: this.password,
-      })
+      this.$store
+        .dispatch('register', {
+          name: this.name,
+          email: this.email,
+          password: this.password,
+        })
+        .then(() => {
+          this.$router.push({ name: 'dashboard' })
+        })
     },
   },
 }
