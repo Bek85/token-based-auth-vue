@@ -6,7 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "start": "node server.js & vue-cli-service serve"
+    "dev": "concurrently \"yarn serve\" \"node server.js\""
   },
   "dependencies": {
     "axios": "^0.18.0",
@@ -28,6 +28,7 @@
     "@vue/cli-service": "^3.4.0",
     "@vue/eslint-config-prettier": "^4.0.1",
     "babel-eslint": "^10.0.1",
+    "concurrently": "^8.2.2",
     "eslint": "^5.8.0",
     "eslint-plugin-node": "^8.0.1",
     "eslint-plugin-promise": "^4.0.1",
